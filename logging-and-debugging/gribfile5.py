@@ -47,7 +47,7 @@ class GribFileTest(unittest.TestCase):
         grib_file.save(values)
 
         read_values = grib_file.read()
-        # The method ``assertEqual()`` checkes whether two values are equal or
+        # The method ``assertEqual()`` checkes whether two values are equal.
         self.assertEqual(values, read_values)
 
 
