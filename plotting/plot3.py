@@ -5,7 +5,7 @@ import sys
 
 def read_file(fname):
     f = open(fname, "rt")
-    # The same list comprehension, but no nested insed another list
+    # The same list comprehension, but now nested insed another list
     # comprehension with conditional clause
     values = [[float(bit) for bit in line.split()]
               for line in f
