@@ -18,7 +18,7 @@ class GribSloppyTest(unittest.TestCase):
     # ``ctypes`` translates C integers into Python ins/longs
     def test_get_version(self):
         version = gribapi_so.grib_get_api_version()
-        self.assertEqual(10918, version)
+        self.assertEqual(10916, version)
         self.assertEqual(int, type(version))
 
 
