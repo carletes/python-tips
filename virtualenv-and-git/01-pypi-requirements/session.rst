@@ -117,8 +117,8 @@ command.
 Imagine you need to develop a Django web application backed by a MySQL
 database. You would need the following Python packages:
 
-  * Dango itself
-  * The MySQL drivers for Python
+* Dango itself
+* The MySQL drivers for Python
 
 Your ``requirements.txt`` file would look like this::
 
