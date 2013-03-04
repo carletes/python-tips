@@ -1,0 +1,2 @@
+# The ECMWF Python API client
+https://software.ecmwf.int/wiki/download/attachments/23694554/ecmwf-api-client-python.tgz
