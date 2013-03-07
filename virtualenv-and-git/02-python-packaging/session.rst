@@ -6,7 +6,7 @@ session.
 
 Python packages are distributed as source or binary bundles of Python
 code (binary packages may also include platform-specific shared
-libraries, if C extensions where used).
+libraries, if C extensions were used).
 
 Many Python packages are available from `PyPI`_, the Python package
 index.
