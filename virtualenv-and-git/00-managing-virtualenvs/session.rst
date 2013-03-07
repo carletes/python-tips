@@ -54,10 +54,9 @@ Inside a virtualenv
 ===================
 
 The command ``mkvirtualenv`` creates a self-contained Python
-distribution under XXX::
+distribution under ``$WORKON_HOME``::
 
     carlos@elouard:~$ mkvirtualenv foo
-    The --no-site-packages flag is deprecated; it is now the default behavior.
     New python executable in foo/bin/python
     [..]
     (foo)carlos@elouard:~$
