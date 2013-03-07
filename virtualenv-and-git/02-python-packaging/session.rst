@@ -16,7 +16,7 @@ Inside a Python package
 =======================
 
 Python source packages are just directory structures, bundled in Zip or
-Tar archives, which contain a top-level ``setup.py`` file describing its
+Tar archives, which contain a top-level ``setup.py`` script describing its
 contents.
 
 Have a look at the `gribsloppy`_ toy package we developed a few sessions
