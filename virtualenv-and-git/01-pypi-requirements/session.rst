@@ -3,22 +3,22 @@ Installing Python packages in a virtualenv
 
 The command ``pip`` lets you install Python packages::
 
-    (foo)carlos@elouard:~$ which pip
+    (foo)carlos@elouard$ which pip
     /home/carlos/.virtualenvs/foo/bin/pip
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 Let's have a look at what gets installed by default::
 
-    (foo)carlos@elouard:~$ pip freeze
+    (foo)carlos@elouard$ pip freeze
     argparse==1.2.1
     distribute==0.6.24
     wsgiref==0.1.2
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 Not much --- just a few dependencies of ``virtualenv`` itself. You can
 now install any Python you need. Let's grab Django, for instance::
 
-    (foo)carlos@elouard:~$ pip install Django
+    (foo)carlos@elouard$ pip install Django
     Downloading/unpacking Django
       Downloading Django-1.5.tar.gz (8.0Mb): 8.0Mb downloaded
       Running setup.py egg_info for package Django
@@ -34,16 +34,16 @@ now install any Python you need. Let's grab Django, for instance::
         changing mode of /home/carlos/.virtualenvs/foo/bin/django-admin.py to 755
     Successfully installed Django
     Cleaning up...
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 Django is now installed under your current virtualenv::
 
-    (foo)carlos@elouard:~$ pip freeze
+    (foo)carlos@elouard$ pip freeze
     Django==1.5
     argparse==1.2.1
     distribute==0.6.24
     wsgiref==0.1.2
-    (foo)carlos@elouard:~$
+    (foo)carlos@elouard$
 
 We did not specify any version for Django, so we get by default the latest one.
 
@@ -51,9 +51,9 @@ The Django distribution, in particular, includes a script to manage Django web
 application. That script, caled ``django-admin.py``, is now available in our
 virtualenv::
 
-    (foo)carlos@elouard:~$ which django-admin.py
+    (foo)carlos@elouard$ which django-admin.py
     /home/carlos/.virtualenvs/foo/bin/django-admin.py
-    (foo)carlos@elouard:~$ django-admin.py --help
+    (foo)carlos@elouard$ django-admin.py --help
     Usage: django-admin.py subcommand [options] [args]
 
     Options:
@@ -103,7 +103,7 @@ virtualenv::
         test
         testserver
         validate
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 
 The requirements file
@@ -122,18 +122,18 @@ database. You would need the following Python packages:
 
 Your ``requirements.txt`` file would look like this::
 
-    (foo)carlos@elouard:~$ cat requirements.txt 
+    (foo)carlos@elouard$ cat requirements.txt 
     # Django
     Django
     
     # MySQL drivers
     MySQL-python
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 You may pass now the name of your requirements file to ``pip``, and then
 ``pip`` will install any packages you don't have yet::
 
-    (foo)carlos@elouard:~$ pip install -r requirements.txt 
+    (foo)carlos@elouard$ pip install -r requirements.txt 
     Requirement already satisfied (use --upgrade to upgrade): Django in
     /home/carlos/.virtualenvs/foo/lib/python2.7/site-packages (from -r
     requirements.txt (line 2))
@@ -154,4 +154,4 @@ You may pass now the name of your requirements file to ``pip``, and then
     
     Successfully installed MySQL-python
     Cleaning up...
-    (foo)carlos@elouard:~$
+    (foo)carlos@elouard$

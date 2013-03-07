@@ -3,7 +3,7 @@ Managing virtual environments
 
 Virtualenvs are created with the ``mkvirtualenv`` command::
 
-    carlos@elouard:~$ mkvirtualenv foo
+    carlos@elouard$ mkvirtualenv foo
     New python executable in foo/bin/python
     Installing
     distribute.............................................................................................................................................................................................done.
@@ -13,42 +13,42 @@ Virtualenvs are created with the ``mkvirtualenv`` command::
     virtualenvwrapper.user_scripts creating /home/carlos/.virtualenvs/foo/bin/preactivate
     virtualenvwrapper.user_scripts creating /home/carlos/.virtualenvs/foo/bin/postactivate
     virtualenvwrapper.user_scripts creating /home/carlos/.virtualenvs/foo/bin/get_env_details
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 Notice the ``(foo)`` prefix in the shell prompt. It means that now we're
 running under the virtualenv called ``foo``::
 
-    (foo)carlos@elouard:~$ which python
+    (foo)carlos@elouard$ which python
     /home/carlos/.virtualenvs/foo/bin/python
-    (foo)carlos@elouard:~$ 
+    (foo)carlos@elouard$ 
 
 You can create as many virtualenvs as you need::
 
-    (foo)carlos@elouard:~$ mkvirtualenv bar
+    (foo)carlos@elouard$ mkvirtualenv bar
     New python executable in bar/bin/python
     [..]
     (bar)carlos@elouard:~$ which python
     /home/carlos/.virtualenvs/bar/bin/python
-    (bar)carlos@elouard:~$ 
+    (bar)carlos@elouard$ 
 
 When you have several virtualenvs, you may switch among them::
 
-    (bar)carlos@elouard:~$ workon foo
-    (foo)carlos@elouard:~$ workon bar
-    (bar)carlos@elouard:~$ 
+    (bar)carlos@elouard$ workon foo
+    (foo)carlos@elouard$ workon bar
+    (bar)carlos@elouard$ 
 
 You may also deactivate your current virtualenv::
 
-    (bar)carlos@elouard:~$ deactivate 
-    carlos@elouard:~$ 
+    (bar)carlos@elouard$ deactivate 
+    carlos@elouard$ 
 
 When you don't need a virtualenv any longer, you may also delete it::
 
-    carlos@elouard:~$ rmvirtualenv foo
+    carlos@elouard$ rmvirtualenv foo
     Removing foo...
-    carlos@elouard:~$ rmvirtualenv bar
+    carlos@elouard$ rmvirtualenv bar
     Removing bar...
-    carlos@elouard:~$ 
+    carlos@elouard$ 
 
 Inside a virtualenv
 ===================
@@ -56,10 +56,10 @@ Inside a virtualenv
 The command ``mkvirtualenv`` creates a self-contained Python
 distribution under ``$WORKON_HOME``::
 
-    carlos@elouard:~$ mkvirtualenv foo
+    carlos@elouard$ mkvirtualenv foo
     New python executable in foo/bin/python
     [..]
-    (foo)carlos@elouard:~$
+    (foo)carlos@elouard$
 
 You can inspect the contents of your virtualenv with the
 ``cdvirtualenv`` command::
