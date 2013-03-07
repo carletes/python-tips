@@ -2,7 +2,7 @@ A real-world example: Our virtualenv for running ECMWF web applications
 =======================================================================
 
 This is the output of ``pip freeze`` for the virtualenv we use to run
-our Django-based web applications::
+our Django-based web applications (like the `public data servers`_)::
 
     Django==1.4.3
     Markdown==2.2.1
@@ -45,3 +45,5 @@ our Django-based web applications::
     -e git+https://software.ecmwf.int/stash/scm/ECCHARTS/wreptools.git@41ae41393e6d63e8f5ad12164c3ebe4664f7319d#egg=wreptools-dev
     wsgiref==0.1.2
     zope.interface==4.0.3
+
+  .. _`public data servers`:  http://apps.ecmwf.int/datasets/
